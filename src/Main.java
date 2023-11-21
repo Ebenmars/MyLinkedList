@@ -6,9 +6,16 @@ public class Main {
 
         MyLinkedList linkedList = new MyLinkedList(3);
 
-        linkedList.getHead();
-        linkedList.getTail();
-        linkedList.getLength();
+        linkedList.append(8);
+        linkedList.append(7);
+        linkedList.prepend(9);
+
+        linkedList.viewHead();
+        linkedList.viewTail();
+        linkedList.viewLength();
+        System.out.println(linkedList.removeFirst().value);
+
+
 
         linkedList.printList();
 
